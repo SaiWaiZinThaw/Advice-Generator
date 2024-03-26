@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      Btn {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* Initially no shadow */
+        transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+      }
+
+      #Btn:hover {
+        box-shadow: 0 0 14px 10px rgba(77, 255, 178, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      id="app"
+      class="font-Manrope w-full h-screen bg-DarkBlue flex items-center justify-center font-bold"
+    >
+      <div
+        class="bg-DarkGrayishBlue w-[460px] p-10 !pb-0 rounded-lg flex flex-col items-center shadow-gray-800 shadow-md"
+      >
+        <h1 class="text-NeonGreen tracking-widest text-sm">
+          ADVICE # <span id="id">4</span>
+        </h1>
+        <p id="quote" class="text-LightCyan text-xl text-center m-5"></p>
+        <img src="./images/pattern-divider-desktop.svg" alt="divider" />
+
+        <div
+          id="Btn"
+          class="w-14 h-14 rounded-full flex items-center justify-center bg-NeonGreen mt-2 translate-y-[50%]"
+        >
+          <img src="./images/icon-dice.svg" alt="dice" />
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
